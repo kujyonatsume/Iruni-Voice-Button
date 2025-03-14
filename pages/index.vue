@@ -33,7 +33,7 @@
       <VTab
         v-for="group in filteredSounds"
         :key="group.group_name"
-        class="text-secondary-600"
+        class="text-neutral-900"
         @click="
           goTo(`#group-btn-${group.group_name}`, {
             offset: -100
@@ -59,7 +59,7 @@
 
         <VExpansionPanelText>
           <VBtn
-            v-for="voice in group.voice_list"
+            v-for="voice in group.voice_list" :key=voice.name
             @click="playSound(voice.path, voice.description.zh)"
             class="sound_btn !rounded-[28px] overflow-hidden"
             :color="
@@ -186,7 +186,6 @@
 <script setup lang="ts">
 import { VSonner, toast } from 'vuetify-sonner';
 import sounds from '~/assets/voices.json';
-import { useGoTo } from 'vuetify';
 
 const route = useRoute();
 
