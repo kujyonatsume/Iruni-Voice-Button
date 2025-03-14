@@ -16,7 +16,7 @@
         <VListItem to="/">
           <template #prepend>
             <div class="mr-8">
-              <VIcon>mdi-home</VIcon>
+              <img src="/img/embed.png" width="24" height="24"/>
             </div>
           </template>
           <VListItemTitle>首頁</VListItemTitle>
@@ -73,10 +73,10 @@
             <div>
               <div>
                 2025
-                  <span v-for="(author, i) in site.footer.authors" :key="i">
-                    <a :href="author.link" target="_blank">{{ author.name }}</a>
-                    {{ i !== site.footer.authors.length - 1 ? "& " : ""  }}
-                  </span>
+                <span v-for="(author, i) in site.footer.authors" :key="i">
+                  <a class="link" :href="author.link" target="_blank">{{ author.name }}</a>
+                  <span v-if="i !== site.footer.authors.length - 1"> & </span>
+              </span>
               </div>
               <div v-html="parseContent(site.footer.content)" />
             </div>
@@ -88,7 +88,7 @@
 </template>
 
 <script setup lang="ts">
-import { links } from '~/assets/links';
+import { links } from '@/assets/links';
 import site from './assets/locales/site.json';
 
 const isDrawerOpen = ref(false);
