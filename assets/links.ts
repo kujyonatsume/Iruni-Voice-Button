@@ -50,6 +50,14 @@ export const links: T_Link[][] = [
       },
       "title": "Twitter",
       "url": "https://x.com/iruni_ianvs"
+    },
+    {
+      "icon": {
+        "color": "#5965F2",
+        "name": "mdi-discord",
+      },
+      "title": "Discord",
+      "url": "https://discord.com/invite/meridianprj"
     }
   ],
   [
@@ -73,6 +81,20 @@ export const links: T_Link[][] = [
       },
       "title": "租咪按鈕",
       "url": "https://yuzumi-button.konnokai.me/"
+    },
+    {
+      "icon": {
+        "emoji": "🍶"
+      },
+      "title": "玖玖巴按鈕",
+      "url": "https://998-button.konnokai.me/"
+    },
+    {
+      "icon": {
+        "emoji": "🐣"
+      },
+      "title": "小響按鈕",
+      "url": "https://hibiki-button.konnokai.me/"
     }
   ]
 ]

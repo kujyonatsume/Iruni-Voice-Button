@@ -2,7 +2,7 @@
   <div>
     <VCard>
       <VCardTitle>
-        <span class="text-3xl">玖玖巴音效版</span>
+        <span class="text-3xl">【魯尼按鈕】</span>
       </VCardTitle>
       <VCardText class="text-lg">
         <ul class="list-disc pl-6">
@@ -24,7 +24,7 @@
               九条夏目
             </a>
           </li>
-          <li>音檔素材來源: Twitch Clip、玖玖巴 Discord 音效板、茄子阿光</li>
+          <li>音檔素材來源: YT剪輯、Twitch Clip、哈士祈 Discord 音效板、月司</li>
           <li>圖檔素材來源: 玖玖巴 Discord</li>
         </ul>
       </VCardText>

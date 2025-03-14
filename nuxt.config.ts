@@ -1,7 +1,7 @@
 import site from './assets/locales/site.json';
 export default defineNuxtConfig({
   devServer: {
-    port: 3333,
+    port: 1000,
     host: '0.0.0.0',
   },
   compatibilityDate: '2024-04-03',

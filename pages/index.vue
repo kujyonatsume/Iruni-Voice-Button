@@ -185,13 +185,17 @@
 
 <script setup lang="ts">
 import { VSonner, toast } from 'vuetify-sonner';
-import sounds from '~/assets/voices.json';
+import sounds from '@/assets/voices.json';
 
 const route = useRoute();
 
 const goTo = useGoTo();
 
-type T_SoundStructure = typeof sounds;
+interface ISetting {
+  loop?: boolean;
+  volume?: number;
+  stack?: boolean;
+}
 
 const isPageLoading = ref(true);
 
@@ -229,11 +233,7 @@ const doSearch = () => {
   isSearching.value = false;
 };
 
-const soundSettings = ref<{
-  loop?: boolean;
-  volume?: number;
-  stack?: boolean;
-}>({});
+const soundSettings = ref<ISetting>({});
 
 const toggleSoundLoop = () => {
   soundSettings.value.loop = !soundSettings.value.loop;
@@ -241,7 +241,7 @@ const toggleSoundLoop = () => {
 
 watch(
   () => soundSettings.value,
-  (v) => {
+  (v: any) => {
     if (currentPlayingSound.value) {
       currentPlayingSound.value.settings = v;
     }
@@ -249,16 +249,11 @@ watch(
   { deep: true }
 );
 
-watch(
-  () => soundSettings.value.loop,
-  (v) => {
-    toast(v ? '開啟循環播放' : '關閉循環播放');
-  }
-);
+watch(() => soundSettings.value.loop, (v: any) => toast(v ? '開啟循環播放' : '關閉循環播放'));
 
 const currentPlayingSound = ref<{
   audio: HTMLAudioElement;
-  settings: { loop?: boolean; volume?: number; stack?: boolean };
+  settings: ISetting;
   name: string;
   path: string;
   progress?: number;
