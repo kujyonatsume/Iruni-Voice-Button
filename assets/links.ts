@@ -33,7 +33,7 @@ export const links: T_Link[][] = [
         "name": "mdi-twitch",
       },
       "title": "Twitch",
-      "url": "https://www.twitch.tv/998rrr"
+      "url": "https://www.twitch.tv/iruni_ianvs"
     },
     {
       "icon": {
@@ -41,7 +41,7 @@ export const links: T_Link[][] = [
         "name": "mdi-youtube",
       },
       "title": "Youtube",
-      "url": "https://www.youtube.com/@998rrr"
+      "url": "https://www.youtube.com/@IruniIanvs"
     },
     {
       "icon": {
@@ -49,15 +49,7 @@ export const links: T_Link[][] = [
         "name": "mdi-twitter",
       },
       "title": "Twitter",
-      "url": "https://twitter.com/998rrr_"
-    },
-    {
-      "icon": {
-        "color": "#5965F2",
-        "name": "mdi-discord",
-      },
-      "title": "Discord",
-      "url": "https://discord.gg/R9eMxbN5Yq"
+      "url": "https://x.com/iruni_ianvs"
     }
   ],
   [
