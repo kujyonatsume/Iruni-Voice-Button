@@ -1,14 +1,14 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
   "compilerOptions": {
-    "types": [
-      "vuetify-sonner"
-    ],
+    "strict": false,
+    "moduleResolution":"node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "paths": {
-      "@/*":["./*"],
-      "vuetify-sonner": [
-        "./node_modules/vue-sonner/*"
-      ]
+      "~/*": [
+        "./*"
+      ],
     }
   },
   "extends": "./.nuxt/tsconfig.json"

@@ -60,14 +60,14 @@
       </template>
     </VNavigationDrawer>
 
-    <VMain class="bg-primary-200">
+    <VMain class="bg-primary-500">
       <div class="flex flex-col h-full">
         <VContainer class="flex-1">
           <NuxtPage />
         </VContainer>
 
         <div>
-          <VFooter color="neutral" class="footer">
+          <VFooter class="footer bg-neutral-100">
             <VIcon>mdi-copyright</VIcon>
             <div class="w-1" />
             <div>
@@ -88,8 +88,8 @@
 </template>
 
 <script setup lang="ts">
-import { links } from '@/assets/links';
-import site from './assets/locales/site.json';
+import { links } from '~/assets/links';
+import site from '~/assets/locales/site.json';
 
 const isDrawerOpen = ref(false);
 

@@ -1,0 +1,20 @@
+{
+  "scss.lint.unknownAtRules": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "Iruni",
+    "natsume",
+    "nuxt",
+    "nuxtjs",
+    "sonner",
+    "vuetify"
+  ],
+  "nuxt.isNuxtApp": false
+}

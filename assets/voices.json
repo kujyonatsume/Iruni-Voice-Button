@@ -3,7 +3,7 @@
     {
       "group_name": "acg",
       "group_description": {
-        "zh": "老二次元了"
+        "zh": "acg"
       },
       "voice_list": [
         {
@@ -139,7 +139,7 @@
     {
       "group_name": "curse",
       "group_description": {
-        "zh": "罵倒類"
+        "zh": "罵倒"
       },
       "voice_list": [
         {
@@ -179,7 +179,7 @@
     {
       "group_name": "headphone_recommand",
       "group_description": {
-        "zh": "耳機推薦 (立體聲，部分可能社死)"
+        "zh": "headphone_recommand"
       },
       "voice_list": [
         {
@@ -239,6 +239,14 @@
           "updated_at": 1735463463
         },
         {
+          "name": "9e54076d2dd0402438c45ef946fe8d85",
+          "path": "headphone_recommand/新婚三問loli.mp3",
+          "description": {
+            "zh": "新婚三問loli"
+          },
+          "updated_at": 1742544682
+        },
+        {
           "name": "c4071f50f404752a69528ae51868ad29",
           "path": "headphone_recommand/穿辣一點喔.mp3",
           "description": {
@@ -283,7 +291,7 @@
     {
       "group_name": "healing_lyrics",
       "group_description": {
-        "zh": "給你滿滿的能量"
+        "zh": "healing_lyrics"
       },
       "voice_list": [
         {
@@ -331,7 +339,7 @@
     {
       "group_name": "mygo",
       "group_description": {
-        "zh": "MyGo"
+        "zh": "mygo"
       },
       "voice_list": [
         {
@@ -347,7 +355,7 @@
     {
       "group_name": "noise",
       "group_description": {
-        "zh": "意義不明的音效"
+        "zh": "noise"
       },
       "voice_list": [
         {
@@ -515,7 +523,7 @@
     {
       "group_name": "normal",
       "group_description": {
-        "zh": "一般台詞"
+        "zh": "台詞回"
       },
       "voice_list": [
         {
@@ -715,7 +723,7 @@
     {
       "group_name": "song",
       "group_description": {
-        "zh": "歌曲"
+        "zh": "song"
       },
       "voice_list": [
         {
@@ -763,7 +771,7 @@
     {
       "group_name": "taiwanese",
       "group_description": {
-        "zh": "台語"
+        "zh": "taiwanese"
       },
       "voice_list": [
         {
@@ -851,7 +859,7 @@
     {
       "group_name": "yandere",
       "group_description": {
-        "zh": "病嬌"
+        "zh": "yandere"
       },
       "voice_list": [
         {

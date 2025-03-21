@@ -33,7 +33,7 @@
       <VTab
         v-for="group in filteredSounds"
         :key="group.group_name"
-        class="text-neutral-900"
+        class="text-secondary-300"
         @click="
           goTo(`#group-btn-${group.group_name}`, {
             offset: -100
@@ -46,20 +46,19 @@
 
     <VExpansionPanels v-model="expansionPanelController" multiple>
       <VExpansionPanel
-        v-for="group in filteredSounds"
-        :key="group.group_name"
-        :value="group.group_name"
-        :id="`group-btn-${group.group_name}`"
+        v-if="newSounds.length"
+        key="new"
+        value="new"
+        id="group-btn-new"
       >
         <VExpansionPanelTitle>
-          <span class="text-2xl">
-            {{ group.group_description.zh }}
-          </span>
+          <span class="text-2xl">最近更新</span>
         </VExpansionPanelTitle>
 
         <VExpansionPanelText>
           <VBtn
-            v-for="voice in group.voice_list" :key=voice.name
+            v-for="voice in newSounds"
+            :key="voice.name"
             @click="playSound(voice.path, voice.description.zh)"
             class="sound_btn !rounded-[28px] overflow-hidden"
             :color="
@@ -82,6 +81,50 @@
           </VBtn>
         </VExpansionPanelText>
       </VExpansionPanel>
+      <VExpansionPanel
+        v-for="group in filteredSounds"
+        :key="group.group_name"
+        :value="group.group_name"
+        :id="`group-btn-${group.group_name}`"
+      >
+        <VExpansionPanelTitle>
+          <span class="text-2xl">
+            {{ group.group_description.zh }}
+          </span>
+        </VExpansionPanelTitle>
+
+        <VExpansionPanelText>
+          <VBadge
+            v-for="voice in group.voice_list"
+            :key="voice.name"
+            :model-value="isIn7Days(voice.updated_at)"
+            color="secondary-400"
+            content="新"
+          >
+            <VBtn
+              @click="playSound(voice.path, voice.description.zh)"
+              class="sound_btn !rounded-[28px] overflow-hidden"
+              :color="
+                currentPlayingSound?.name === voice.description.zh
+                  ? 'secondary'
+                  : 'primary'
+              "
+              variant="flat"
+              :data-sound-name="voice.description.zh"
+            >
+              <div>
+                {{ voice.description.zh }}
+              </div>
+              <VProgressLinear
+                v-if="currentPlayingSound?.name === voice.description.zh"
+                :model-value="currentPlayingSound?.progress"
+                color="secondary"
+                class="!absolute !bottom-0 !top-auto left-0 w-full"
+              />
+            </VBtn>
+          </VBadge>
+        </VExpansionPanelText>
+      </VExpansionPanel>
     </VExpansionPanels>
 
     <VBottomSheet
@@ -96,7 +139,7 @@
       <VSheet>
         <VProgressLinear
           :model-value="currentPlayingSound?.progress"
-          color="secondary"
+          color="secondary" class="bg-primary-400"
         />
 
         <VList>
@@ -185,24 +228,28 @@
 
 <script setup lang="ts">
 import { VSonner, toast } from 'vuetify-sonner';
-import sounds from '@/assets/voices.json';
+import sounds from '~/assets/voices.json';
+import dayjs from 'dayjs';
 
 const route = useRoute();
-
 const goTo = useGoTo();
 
-interface ISetting {
-  loop?: boolean;
-  volume?: number;
-  stack?: boolean;
-}
+const isIn7Days = (unixtimestamp: number) => {
+  return dayjs().diff(dayjs.unix(unixtimestamp), 'day') < 7;
+};
+
+type T_SoundStructure = typeof sounds;
 
 const isPageLoading = ref(true);
 
 const search = ref('');
 
 const filteredSounds = ref(sounds.groups);
-
+const newSounds = computed(() =>
+  filteredSounds.value
+    .map((g) => g.voice_list.filter((s) => isIn7Days(s.updated_at)))
+    .flat()
+);
 const isSearching = ref(false);
 const doSearch = () => {
   if (!search.value) {
@@ -233,7 +280,11 @@ const doSearch = () => {
   isSearching.value = false;
 };
 
-const soundSettings = ref<ISetting>({});
+const soundSettings = ref<{
+  loop?: boolean;
+  volume?: number;
+  stack?: boolean;
+}>({});
 
 const toggleSoundLoop = () => {
   soundSettings.value.loop = !soundSettings.value.loop;
@@ -241,7 +292,7 @@ const toggleSoundLoop = () => {
 
 watch(
   () => soundSettings.value,
-  (v: any) => {
+  (v) => {
     if (currentPlayingSound.value) {
       currentPlayingSound.value.settings = v;
     }
@@ -249,11 +300,16 @@ watch(
   { deep: true }
 );
 
-watch(() => soundSettings.value.loop, (v: any) => toast(v ? '開啟循環播放' : '關閉循環播放'));
+watch(
+  () => soundSettings.value.loop,
+  (v) => {
+    toast(v ? '開啟循環播放' : '關閉循環播放');
+  }
+);
 
 const currentPlayingSound = ref<{
   audio: HTMLAudioElement;
-  settings: ISetting;
+  settings: { loop?: boolean; volume?: number; stack?: boolean };
   name: string;
   path: string;
   progress?: number;
@@ -294,12 +350,30 @@ const setListenerForCurrentPlayingSound = () => {
   });
 };
 
-const playSound = (soundPath: string, soundName: string) => {
+const playSound = async (soundPath: string, soundName: string) => {
   if (currentPlayingSound.value) {
     stopSound();
   }
+  const assetPath = `/voices/${soundPath}`;
 
-  const audio = new Audio(`/voices/${soundPath}`);
+  let fetchPassed = false;
+  try {
+    const response = await fetch(assetPath, { method: 'HEAD' });
+    if (response.status === 200) {
+      fetchPassed = true;
+    }
+  } catch (error) {
+    console.error(error);
+    return;
+  }
+
+  if (!fetchPassed) {
+    toast('找不到聲音檔案');
+    return;
+  }
+
+  const audio = new Audio(assetPath);
+
   currentPlayingSound.value = {
     audio,
     settings: soundSettings.value,
