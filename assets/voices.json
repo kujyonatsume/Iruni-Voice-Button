@@ -3,7 +3,7 @@
     {
       "group_name": "acg",
       "group_description": {
-        "zh": "acg"
+        "zh": "二次元台詞"
       },
       "voice_list": [
         {
@@ -59,7 +59,7 @@
     {
       "group_name": "collapse",
       "group_description": {
-        "zh": "崩潰"
+        "zh": "崩潰語音"
       },
       "voice_list": [
         {
@@ -85,6 +85,14 @@
             "zh": "你們都騙我的小珍珠"
           },
           "updated_at": 1734463163
+        },
+        {
+          "name": "f566b38ae33b5d0dc04e552c95cab691",
+          "path": "collapse/你們除了會讓我中風還會幹什麼.mp3",
+          "description": {
+            "zh": "你們除了會讓我中風還會幹什麼"
+          },
+          "updated_at": 1735509631
         },
         {
           "name": "19a5cbca1f156fec5e704122209a80ba",
@@ -139,7 +147,7 @@
     {
       "group_name": "curse",
       "group_description": {
-        "zh": "罵倒"
+        "zh": "罵倒台詞"
       },
       "voice_list": [
         {
@@ -177,9 +185,153 @@
       ]
     },
     {
+      "group_name": "foreign_language",
+      "group_description": {
+        "zh": "各國語言合集"
+      },
+      "voice_list": [
+        {
+          "name": "22111325f4bca26ae398f6948fe1d83e",
+          "path": "foreign_language/8點檔.mp3",
+          "description": {
+            "zh": "8點檔"
+          },
+          "updated_at": 1735757724
+        },
+        {
+          "name": "6fdf7d265ce6f7aac649824b25dab2c8",
+          "path": "foreign_language/I_will_punish_DD_no_DD.mp3",
+          "description": {
+            "zh": "I_will_punish_DD_no_DD"
+          },
+          "updated_at": 1735163424
+        },
+        {
+          "name": "ca39f95284d0ebc01328c008eea89810",
+          "path": "foreign_language/WDYM.mp3",
+          "description": {
+            "zh": "WDYM"
+          },
+          "updated_at": 1735523099
+        },
+        {
+          "name": "357a3910e0fab9371a89cd387da1674a",
+          "path": "foreign_language/Yeah_you_die_I_die_go_die_die.mp3",
+          "description": {
+            "zh": "Yeah_you_die_I_die_go_die_die"
+          },
+          "updated_at": 1735523063
+        },
+        {
+          "name": "c72543ea1f0f0b4e1387051b62e3a3c9",
+          "path": "foreign_language/わくわく.mp3",
+          "description": {
+            "zh": "わくわく"
+          },
+          "updated_at": 1735509043
+        },
+        {
+          "name": "83f0f7f75895942a1094e009a1689c9e",
+          "path": "foreign_language/你好(泰語).mp3",
+          "description": {
+            "zh": "你好(泰語)"
+          },
+          "updated_at": 1735758186
+        },
+        {
+          "name": "c1bc80c8c02ead4543b99d137a74a1c2",
+          "path": "foreign_language/你好(粵語).mp3",
+          "description": {
+            "zh": "你好(粵語)"
+          },
+          "updated_at": 1735757565
+        },
+        {
+          "name": "e9f405389368f3ce793a89d00b3b7919",
+          "path": "foreign_language/你愛我嗎(台語).mp3",
+          "description": {
+            "zh": "你愛我嗎(台語)"
+          },
+          "updated_at": 1735757621
+        },
+        {
+          "name": "df81ab8b038e9e31cd37f22590420a26",
+          "path": "foreign_language/假偷刀挖災亞蝦密喜偷刀假偷刀.mp3",
+          "description": {
+            "zh": "假偷刀挖災亞蝦密喜偷刀假偷刀"
+          },
+          "updated_at": 1734463218
+        },
+        {
+          "name": "0dcea67b37f028ac89194502eaf09eb5",
+          "path": "foreign_language/我像妳去死啦.mp3",
+          "description": {
+            "zh": "我像妳去死啦"
+          },
+          "updated_at": 1735601481
+        },
+        {
+          "name": "9ac154c4d2e81b6541cc16ed3a7a0cd6",
+          "path": "foreign_language/我原本很愛你(台語).mp3",
+          "description": {
+            "zh": "我原本很愛你(台語)"
+          },
+          "updated_at": 1735757631
+        },
+        {
+          "name": "dd94c3bfdce1963e86f10aefdfb25781",
+          "path": "foreign_language/我欲對別人走.mp3",
+          "description": {
+            "zh": "我欲對別人走"
+          },
+          "updated_at": 1735757650
+        },
+        {
+          "name": "affb9c7f7e864956e3e35e4ad985eaa6",
+          "path": "foreign_language/挖喜祈iruni.mp3",
+          "description": {
+            "zh": "挖喜祈iruni"
+          },
+          "updated_at": 1734462910
+        },
+        {
+          "name": "2cc1023104a60ffaf8c33a16e2b722c9",
+          "path": "foreign_language/挖誒台益逼哩喀厚哩災亞某.mp3",
+          "description": {
+            "zh": "挖誒台益逼哩喀厚哩災亞某"
+          },
+          "updated_at": 1734462953
+        },
+        {
+          "name": "337ce0f1f6ed210bc5bd3077bc0abbaf",
+          "path": "foreign_language/蛋雕蛋雕吝誒好啦沒有拉開玩笑的.mp3",
+          "description": {
+            "zh": "蛋雕蛋雕吝誒好啦沒有拉開玩笑的"
+          },
+          "updated_at": 1734463023
+        },
+        {
+          "name": "d2220154278bc3153a7c2b1514efeeed",
+          "path": "foreign_language/說話該小聲的是誰.mp3",
+          "description": {
+            "zh": "說話該小聲的是誰"
+          },
+          "updated_at": 1735601566
+        },
+        {
+          "name": "853fd15df976d87ed0c49be62eb3cfb6",
+          "path": "foreign_language/魯尼Ka.mp3",
+          "description": {
+            "zh": "魯尼Ka"
+          },
+          "updated_at": 1735757708
+        }
+      ]
+    },
+    {
       "group_name": "headphone_recommand",
       "group_description": {
-        "zh": "headphone_recommand"
+        "zh": "耳機推薦"
       },
       "voice_list": [
         {
@@ -291,7 +443,7 @@
     {
       "group_name": "healing_lyrics",
       "group_description": {
-        "zh": "healing_lyrics"
+        "zh": "心靈治癒"
       },
       "voice_list": [
         {
@@ -355,7 +507,7 @@
     {
       "group_name": "noise",
       "group_description": {
-        "zh": "noise"
+        "zh": "意義不明的音效"
       },
       "voice_list": [
         {
@@ -389,22 +541,6 @@
             "zh": "YesYesYes"
           },
           "updated_at": 1735758174
-        },
-        {
-          "name": "83f0f7f75895942a1094e009a1689c9e",
-          "path": "noise/你好(泰語).mp3",
-          "description": {
-            "zh": "你好(泰語)"
-          },
-          "updated_at": 1735758186
-        },
-        {
-          "name": "c1bc80c8c02ead4543b99d137a74a1c2",
-          "path": "noise/你好(粵語).mp3",
-          "description": {
-            "zh": "你好(粵語)"
-          },
-          "updated_at": 1735757565
         },
         {
           "name": "8a7361a3edc1e347ea5f0ccb31a11c62",
@@ -509,55 +645,15 @@
             "zh": "阿巴阿巴阿巴"
           },
           "updated_at": 1735509057
-        },
-        {
-          "name": "853fd15df976d87ed0c49be62eb3cfb6",
-          "path": "noise/魯尼Ka.mp3",
-          "description": {
-            "zh": "魯尼Ka"
-          },
-          "updated_at": 1735757708
         }
       ]
     },
     {
       "group_name": "normal",
       "group_description": {
-        "zh": "台詞回"
+        "zh": "一般台詞"
       },
       "voice_list": [
-        {
-          "name": "6fdf7d265ce6f7aac649824b25dab2c8",
-          "path": "normal/I_will_punish_DD_no_DD.mp3",
-          "description": {
-            "zh": "I_will_punish_DD_no_DD"
-          },
-          "updated_at": 1735163424
-        },
-        {
-          "name": "ca39f95284d0ebc01328c008eea89810",
-          "path": "normal/WDYM.mp3",
-          "description": {
-            "zh": "WDYM"
-          },
-          "updated_at": 1735523099
-        },
-        {
-          "name": "357a3910e0fab9371a89cd387da1674a",
-          "path": "normal/Yeah_you_die_I_die_go_die_die.mp3",
-          "description": {
-            "zh": "Yeah_you_die_I_die_go_die_die"
-          },
-          "updated_at": 1735523063
-        },
-        {
-          "name": "c72543ea1f0f0b4e1387051b62e3a3c9",
-          "path": "normal/わくわく.mp3",
-          "description": {
-            "zh": "わくわく"
-          },
-          "updated_at": 1735509043
-        },
         {
           "name": "5476c43cf78e58072270d4b489fb5aff",
           "path": "normal/不要只會出一張嘴.mp3",
@@ -581,14 +677,6 @@
             "zh": "你們清醒一點我拜託你們清醒一點好不好"
           },
           "updated_at": 1735508120
-        },
-        {
-          "name": "f566b38ae33b5d0dc04e552c95cab691",
-          "path": "normal/你們除了會讓我中風還會幹什麼.mp3",
-          "description": {
-            "zh": "你們除了會讓我中風還會幹什麼"
-          },
-          "updated_at": 1735509631
         },
         {
           "name": "41180721e2c8d38bd1186053e888f22e",
@@ -723,7 +811,7 @@
     {
       "group_name": "song",
       "group_description": {
-        "zh": "song"
+        "zh": "歌回"
       },
       "voice_list": [
         {
@@ -769,97 +857,9 @@
       ]
     },
     {
-      "group_name": "taiwanese",
-      "group_description": {
-        "zh": "taiwanese"
-      },
-      "voice_list": [
-        {
-          "name": "22111325f4bca26ae398f6948fe1d83e",
-          "path": "taiwanese/8點檔.mp3",
-          "description": {
-            "zh": "8點檔"
-          },
-          "updated_at": 1735757724
-        },
-        {
-          "name": "e9f405389368f3ce793a89d00b3b7919",
-          "path": "taiwanese/你愛我嗎(台語).mp3",
-          "description": {
-            "zh": "你愛我嗎(台語)"
-          },
-          "updated_at": 1735757621
-        },
-        {
-          "name": "df81ab8b038e9e31cd37f22590420a26",
-          "path": "taiwanese/假偷刀挖災亞蝦密喜偷刀假偷刀.mp3",
-          "description": {
-            "zh": "假偷刀挖災亞蝦密喜偷刀假偷刀"
-          },
-          "updated_at": 1734463218
-        },
-        {
-          "name": "0dcea67b37f028ac89194502eaf09eb5",
-          "path": "taiwanese/我像妳去死啦.mp3",
-          "description": {
-            "zh": "我像妳去死啦"
-          },
-          "updated_at": 1735601481
-        },
-        {
-          "name": "9ac154c4d2e81b6541cc16ed3a7a0cd6",
-          "path": "taiwanese/我原本很愛你(台語).mp3",
-          "description": {
-            "zh": "我原本很愛你(台語)"
-          },
-          "updated_at": 1735757631
-        },
-        {
-          "name": "dd94c3bfdce1963e86f10aefdfb25781",
-          "path": "taiwanese/我欲對別人走.mp3",
-          "description": {
-            "zh": "我欲對別人走"
-          },
-          "updated_at": 1735757650
-        },
-        {
-          "name": "affb9c7f7e864956e3e35e4ad985eaa6",
-          "path": "taiwanese/挖喜祈iruni.mp3",
-          "description": {
-            "zh": "挖喜祈iruni"
-          },
-          "updated_at": 1734462910
-        },
-        {
-          "name": "2cc1023104a60ffaf8c33a16e2b722c9",
-          "path": "taiwanese/挖誒台益逼哩喀厚哩災亞某.mp3",
-          "description": {
-            "zh": "挖誒台益逼哩喀厚哩災亞某"
-          },
-          "updated_at": 1734462953
-        },
-        {
-          "name": "337ce0f1f6ed210bc5bd3077bc0abbaf",
-          "path": "taiwanese/蛋雕蛋雕吝誒好啦沒有拉開玩笑的.mp3",
-          "description": {
-            "zh": "蛋雕蛋雕吝誒好啦沒有拉開玩笑的"
-          },
-          "updated_at": 1734463023
-        },
-        {
-          "name": "d2220154278bc3153a7c2b1514efeeed",
-          "path": "taiwanese/說話該小聲的是誰.mp3",
-          "description": {
-            "zh": "說話該小聲的是誰"
-          },
-          "updated_at": 1735601566
-        }
-      ]
-    },
-    {
       "group_name": "yandere",
       "group_description": {
-        "zh": "yandere"
+        "zh": "病嬌台詞"
       },
       "voice_list": [
         {
