@@ -2,7 +2,7 @@
   "title": "【魯尼按鈕】",
   "description": "就只是個柯基按鈕網站",
   "keywords": "VTuber VoiceButton 祈Iruni 九条夏目",
-  "url": "https://iruni-button.natsumoe.com",
+  "url": "https://iruni-button.natsumes.cc",
   "social_image": "/img/embed.png",
   "twitter_user": "@_natsume0304",
   "theme_color": "#258cc4",
@@ -21,7 +21,7 @@
         "link": "https://github.com/kujyonatsume"
       }
     ],
-    "repo_link": "https://github.com/konnokai/iruni-voice-button",
+    "repo_link": "https://github.com/kujyonatsume/iruni-voice-button",
     "content": "本站為愛好者作品，和{0}沒有關聯，其餘資訊請查看{1} & {2}",
     "content_params": [
       { "name": "祈Iruni" },

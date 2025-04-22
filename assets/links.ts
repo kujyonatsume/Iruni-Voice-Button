@@ -101,7 +101,7 @@ export const links: T_Link[][] = [
         "emoji": "😈"
       },
       "title": "玥玥按鈕",
-      "url": "https://itsuki-button.natsumoe.com/"
+      "url": "https://itsuki-button.natsumes.cc/"
     }
   ]
 ]
