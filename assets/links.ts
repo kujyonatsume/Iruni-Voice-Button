@@ -26,39 +26,46 @@ type T_Link = {
 
 
 export const links: T_Link[][] = [
-  [
-    {
-      "icon": {
-        "color": "#A96FFF",
-        "name": "mdi-twitch",
-      },
-      "title": "Twitch",
-      "url": "https://www.twitch.tv/iruni_ianvs"
+  [{
+    "icon": {
+      "color": "#404040",
+      "name": "mdi-disc-player",
     },
-    {
-      "icon": {
-        "color": "#FF0032",
-        "name": "mdi-youtube",
-      },
-      "title": "Youtube",
-      "url": "https://www.youtube.com/@IruniIanvs"
+    "title": "歌單播放器",
+    "url": "https://iruni-song.natsumes.cc"
+  },
+  {
+    "icon": {
+      "color": "#A96FFF",
+      "name": "mdi-twitch",
     },
-    {
-      "icon": {
-        "color": "#1E9AF0",
-        "name": "mdi-twitter",
-      },
-      "title": "Twitter",
-      "url": "https://x.com/iruni_ianvs"
+    "title": "Twitch",
+    "url": "https://www.twitch.tv/iruni_ianvs"
+  },
+  {
+    "icon": {
+      "color": "#FF0032",
+      "name": "mdi-youtube",
     },
-    {
-      "icon": {
-        "color": "#5965F2",
-        "name": "mdi-discord",
-      },
-      "title": "Discord",
-      "url": "https://discord.com/invite/meridianprj"
-    }
+    "title": "Youtube",
+    "url": "https://www.youtube.com/@IruniIanvs"
+  },
+  {
+    "icon": {
+      "color": "#1E9AF0",
+      "name": "mdi-twitter",
+    },
+    "title": "Twitter",
+    "url": "https://x.com/iruni_ianvs"
+  },
+  {
+    "icon": {
+      "color": "#5965F2",
+      "name": "mdi-discord",
+    },
+    "title": "Discord",
+    "url": "https://discord.com/invite/meridianprj"
+  }
   ],
   [
     {
